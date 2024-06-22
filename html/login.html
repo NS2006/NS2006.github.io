@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Willify | Sign Up</title>
+
+    <link rel="stylesheet" href="../style/header.css">
+    <link rel="stylesheet" href="../style/footer.css">
+    <link rel="stylesheet" href="../style/login.css">
+    <script src="../js/login.js" defer></script>
+</head>
+<body>
+    <!-- Header -->
+    <header class="navbar">
+        <div class="left">
+            <div class="navbar-logo">
+                <a href="../html/home.html">
+                    <img src="../assets/img/Logo Willify.png" alt="Icon Willify">
+                </a>
+            </div>
+        </div>
+
+        <div class="middle">
+            <div class="navbar-icon">
+                <a href="../html/home.html">
+                    <div class="navbar-icon-img">
+                        <img src="../assets/img/Icon Home.png" alt="Icon Home">
+                    </div>
+                    <h1>Home</h1>
+                </a>
+            </div>
+
+            <div class="navbar-icon">
+                <a href="../html/songs.html">
+                    <div class="navbar-icon-img">
+                        <img src="../assets/img/Icon Songs.png" alt="Icon Home">
+                    </div>
+                    <h1>Songs</h1>
+                </a>
+            </div>
+
+            <div class="navbar-icon">
+                <a href="../html/abouUs.html">
+                    <div class="navbar-icon-img">
+                        <img src="../assets/img/Icon About Us.png" alt="Icon Home">
+                    </div>
+                    <h1>About Us</h1>
+                </a>
+            </div>
+        </div>
+
+        <div class="right">
+            <button>
+                <a href="../html/login.html">Login</a>
+            </button>
+        </div>
+    </header>
+
+
+    <!-- Login -->
+    <div class="container">
+        <div class="switch-container">
+            <button id="loginBtn" class="active-switch">LOGIN</button>
+            <button id="signUpBtn">SIGN UP</button>
+        </div>
+
+        <div class="form-container">
+            <form id="loginPage" class="active">
+                <div class="login-other-container">
+                    <a href="#" class="login-other-card">
+                        <div class="wrapper">
+                            <img src="../assets/img/Icon Google.png" alt="Icon Google">
+                        </div>
+                        <h4>Login with Google</h4>
+                    </a>
+
+                    <a href="#" class="login-other-card">
+                        <div class="wrapper">
+                            <img src="../assets/img/Icon Facebook.png" alt="Icon Facebook">
+                        </div>
+                        <h4>Login with Facebook</h4>
+                    </a>
+                </div>
+
+                <h5>OR</h5>
+
+                <div class="form-input">
+                    <label for="username/email">Username/Email :</label>
+                    <input type="text" name="username" id="username/email" placeholder="Username/Email">
+                </div>
+    
+                <div class="form-input">
+                    <label for="passwordLogin">Password :</label>
+                    <input type="password" name="password" id="passwordLogin" placeholder="Password">
+                </div>
+    
+                <a href="../html/home.html">
+                    <button id="loginSubmit" type="button">Login</button>
+                </a>
+            </form>
+    
+            <form id="signUpPage">
+                <div class="form-input">
+                    <label for="username">Username :</label>
+                    <input type="text" name="username" id="username" placeholder="Username">
+                    <p class="error-msg" id="error-username"></p>
+                </div>
+    
+                <div class="form-input">
+                    <label for="email">Email :</label>
+                    <input type="text" name="email" id="email" placeholder="Email">
+                    <p class="error-msg" id="error-email"></p>
+                </div>
+    
+                <div class="form-input">
+                    <label for="password">Password :</label>
+                    <input type="password" name="password" id="password" placeholder="Password">
+                    <p class="error-msg" id="error-password"></p>
+                </div>
+    
+                <div class="form-input">
+                    <label for="age">Age :</label>
+                    <input type="number" name="age" id="age" placeholder="Age">
+                    <p class="error-msg" id="error-age"></p>
+                </div>
+    
+                <div class="form-input">
+                    <label for="gender">Gender</label>
+                    <select name="gender" id="gender">
+                        <option value="(none)">(none)</option>
+                        <option value="male">Male</option>
+                        <option value="female">Female</option>
+                    </select>
+                    <p class="error-msg" id="error-gender"></p>
+                </div>
+    
+                <button id="signUpSubmit" type="button">Sign Up</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer-container">
+        <div class="left">
+            <div class="logo-wrapper">
+                <img src="../assets/img/Logo Willify.png" alt="Logo Willify">
+            </div>
+        </div>
+
+        <div class="right">
+            <div class="part-1">
+                <a href="../html/home.html">Home</a>
+                <a href="../html/songs.html">Songs</a>
+                <a href="../html/abouUs.html">About Us</a>
+            </div>
+
+            <div class="part-2">
+                <div class="top">
+                    <h3>Contact Us</h3>
+                </div>
+                <div class="bottom">
+                    <a href="#" class="footer-contact">
+                        <img src="../assets/img/Icon Line.png" alt="Icon Line">
+                    </a>
+    
+                    <a href="#" class="footer-contact">
+                        <img src="../assets/img/Icon Email.png" alt="Icon Email">
+                    </a>
+    
+                    <a href="#" class="footer-contact">
+                        <img src="../assets/img/Icon Instagram.png" alt="Icon Instagram">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

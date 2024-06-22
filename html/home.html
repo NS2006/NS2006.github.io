@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Willify | Home</title>
+
+    <link rel="stylesheet" href="../style/header.css">
+    <link rel="stylesheet" href="../style/footer.css">
+    <link rel="stylesheet" href="../style/home.css">
+    
+    <script src="../js/songData.js" defer></script>
+    <script src="../js/home.js" defer></script>
+</head>
+<body>
+    <!-- Header -->
+    <header class="navbar">
+        <div class="left">
+            <div class="navbar-logo">
+                <a href="../html/home.html">
+                    <img src="../assets/img/Logo Willify.png" alt="Icon Willify">
+                </a>
+            </div>
+        </div>
+
+        <div class="middle">
+            <div class="navbar-icon navbar-active">
+                <a href="../html/home.html">
+                    <div class="navbar-icon-img">
+                        <img src="../assets/img/Icon Home.png" alt="Icon Home">
+                    </div>
+                    <h1>Home</h1>
+                </a>
+            </div>
+
+            <div class="navbar-icon">
+                <a href="../html/songs.html">
+                    <div class="navbar-icon-img">
+                        <img src="../assets/img/Icon Songs.png" alt="Icon Home">
+                    </div>
+                    <h1>Songs</h1>
+                </a>
+            </div>
+
+            <div class="navbar-icon">
+                <a href="../html/abouUs.html">
+                    <div class="navbar-icon-img">
+                        <img src="../assets/img/Icon About Us.png" alt="Icon Home">
+                    </div>
+                    <h1>About Us</h1>
+                </a>
+            </div>
+        </div>
+
+        <div class="right">
+            <button>
+                <a href="../html/login.html">Login</a>
+            </button>
+        </div>
+    </header>
+
+    
+
+    <!-- Content -->
+    <div class="container">
+        <div class="left">
+            <div class="greeting">
+                <h1 id="greeting-text"></h1>
+                <h3 id="time">00:00:00</h3>
+            </div>
+
+            <div class="description">
+                <h3>Willify</h3>
+                <p id="description-willify"></p>
+            </div>
+
+            <div class="bottom">
+                <div class="playlist">
+                    <h3>Playlist</h3>
+
+                    <div class="content">
+                        <div class="card">
+                            <button type="button">
+                                Best Song 2023
+                            </button>
+                        </div>
+
+                        <div class="card">
+                            <button type="button" onclick="addNewPlaylist()">
+                                + Create New
+                            </button>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="favorite">
+                    <h3>Favorite</h3>
+                    
+                    <div class="content">
+                        <div class="card">
+                            <a href="../html/songDetail.html" class="song1">
+                                <button type="button">
+                                    <div class="img-wrapper">
+                                        <img src="../assets/img/Song-Hall Of Fame.jpg" alt="Song Hall Of Fame">
+                                    </div>
+                                    <p>Hall Of Fame</p>
+                                </button>
+                            </a>
+                        </div>
+
+                        <div class="card">
+                            <a href="../html/songDetail.html" class="song3">
+                                <button type="button">
+                                    <div class="img-wrapper">
+                                        <img src="../assets/img/Song-7 Years.jpg" alt="Song 7 Years">
+                                    </div>
+                                    <p>7 Years</p>
+                                </button>
+                            </a>
+                        </div>
+
+                        <div class="card">
+                            <a href="../html/songDetail.html" class="song2">
+                                <button type="button">
+                                    <div class="img-wrapper">
+                                        <img src="../assets/img/Song-The Nights.jpg" alt="Song The Nights">
+                                    </div>
+                                    <p>The Nights</p>
+                                </button>
+                            </a>
+                        </div>
+
+                        <div class="card">
+                            <a href="../html/songDetail.html" class="song4">
+                                <button type="button">
+                                    <div class="img-wrapper">
+                                        <img src="../assets/img/Song-Faded.jpg" alt="Song Faded">
+                                    </div>
+                                    <p>Faded</p>
+                                </button>
+                            </a>
+                        </div>
+
+                        <div class="card">
+                            <a href="../html/songDetail.html" class="song5">
+                                <button type="button">
+                                    <div class="img-wrapper">
+                                        <img src="../assets/img/Song-Waiting For Love.jpg" alt="Song Waiting For Love">
+                                    </div>
+                                    <p>Waiting For Love</p>
+                                </button>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="recent">
+                    <h3>Recent</h3>
+
+                    <div class="content">
+                        <div class="card">
+                            <a href="../html/songDetail.html" class="song2">
+                                <button type="button">
+                                    <div class="img-wrapper">
+                                        <img src="../assets/img/Song-The Nights.jpg" alt="Song The Nights">
+                                    </div>
+                                    <p>The Nights</p>
+                                </button>
+                            </a>
+                        </div>
+
+                        <div class="card">
+                            <a href="../html/songDetail.html" class="song5">
+                                <button type="button">
+                                    <div class="img-wrapper">
+                                        <img src="../assets/img/Song-Waiting For Love.jpg" alt="Song Waiting For Love">
+                                    </div>
+                                    <p>Waiting For Love</p>
+                                </button>
+                            </a>
+                        </div>
+
+                        <div class="card">
+                            <a href="../html/songDetail.html" class="song4">
+                                <button type="button">
+                                    <div class="img-wrapper">
+                                        <img src="../assets/img/Song-Faded.jpg" alt="Song Faded">
+                                    </div>
+                                    <p>Faded</p>
+                                </button>
+                            </a>
+                        </div>
+
+                        <div class="card">
+                            <a href="../html/songDetail.html" class="song3">
+                                <button type="button">
+                                    <div class="img-wrapper">
+                                        <img src="../assets/img/Song-7 Years.jpg" alt="Song 7 Years">
+                                    </div>
+                                    <p>7 Years</p>
+                                </button>
+                            </a>
+                        </div>
+
+                        <div class="card" class="song1">
+                            <a href="../html/songDetail.html">
+                                <button type="button">
+                                    <div class="img-wrapper">
+                                        <img src="../assets/img/Song-Hall Of Fame.jpg" alt="Song Hall Of Fame">
+                                    </div>
+                                    <p>Hall Of Fame</p>
+                                </button>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="right">
+            <div class="search-bar">
+                <label for="search">
+                    <img src="../assets/img/Icon Search.png" alt="Icon Search">
+                </label>
+                <form>
+                    <input type="text" id="search" placeholder="Type here to search">
+                </form>
+            </div>
+
+            <div class="popular-song">
+                <div class="top-popular">
+                    <h3>Most Popular Song in Willify</h3>
+                </div>
+
+                <div class="bottom-popular">
+                    <div class="left-popular">
+                        <img src="../assets/img/Song-Hall Of Fame.jpg" alt="Song Hall Of Fame">
+                    </div>
+    
+                    <div class="right-popular">
+                        <div class="title">
+                            <h4>Hall Of Fame</h4>
+                        </div>
+                        <div class="singer">
+                            <p>The Script ft. Will.I.Am</p>
+                        </div>
+                        <div class="description">
+                            2 Billion Plays
+                        </div>
+                        <a href="../html/songDetail.html" class="song1">
+                            <button>Play Now</button>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Footer -->
+    <footer class="footer-container">
+        <div class="left">
+            <div class="logo-wrapper">
+                <img src="../assets/img/Logo Willify.png" alt="Logo Willify">
+            </div>
+        </div>
+
+        <div class="right">
+            <div class="part-1">
+                <a href="../html/home.html">Home</a>
+                <a href="../html/songs.html">Songs</a>
+                <a href="../html/abouUs.html">About Us</a>
+            </div>
+
+            <div class="part-2">
+                <div class="top">
+                    <h3>Contact Us</h3>
+                </div>
+                <div class="bottom">
+                    <a href="#" class="footer-contact">
+                        <img src="../assets/img/Icon Line.png" alt="Icon Line">
+                    </a>
+    
+                    <a href="#" class="footer-contact">
+                        <img src="../assets/img/Icon Email.png" alt="Icon Email">
+                    </a>
+    
+                    <a href="#" class="footer-contact">
+                        <img src="../assets/img/Icon Instagram.png" alt="Icon Instagram">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

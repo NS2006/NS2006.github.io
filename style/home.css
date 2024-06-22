@@ -1,0 +1,376 @@
+*{
+    font-family: 'Atmospheric';
+}
+
+.container{
+    display: flex;
+    flex-direction: row-reverse;
+    width: 100%;
+    height: 600px;
+    margin-top: 1rem;
+}
+
+.container .left, .container .right{
+    height: inherit;
+    margin: 0 1rem;
+}
+
+.container .left{
+    width: 60%;
+    animation: right 1s linear;
+    padding-right: 1rem;
+}
+
+.container .right{
+    width: 40%;
+    animation: left 1s linear;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.container .left .greeting{
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-shadow: 3px 3px 3px black;
+    margin: 1rem 0;
+    margin-top: 0;
+    border-radius: 20px;
+}
+
+.container .left .greeting h3{
+    margin:0;
+}
+
+@keyframes left {
+    0%{
+        transform: translateX(-100%);
+    }
+    100%{
+        transform: translateX(0);
+    }
+}
+
+@keyframes right {
+    0%{
+        transform: translateX(100%);
+    }
+    100%{
+        transform: translateX(0);
+    }
+}
+
+.container .left .description{
+    border-radius: 10px;
+    padding: 0.5rem;
+}
+
+.container .left .description h3{
+    text-align: center;
+    color:white;
+    text-shadow: 3px 3px 3px black;
+    margin: 0;
+}
+
+.container .left .description p{
+    color: white;
+    text-shadow: 3px 3px 5px black;
+    padding: 0 1rem;
+}
+
+.container .left .bottom{
+    margin-top: 1rem;
+    padding: 1rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.bottom h3{
+    text-align: center;
+}
+
+.playlist, .favorite, .recent{
+    width: 200px;
+    color: white;
+    text-shadow: 3px 3px 3px black;
+    letter-spacing: 2px;
+}
+
+.left .content{
+    width: 100%;
+    height: 200px;
+    gap: 50px;
+    overflow-y: scroll;
+}
+
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: rgb(119, 119, 119);
+    border-left: 1px solid black;
+    border-radius: 5px;
+}
+   
+::-webkit-scrollbar-thumb {
+    background: rgb(179, 178, 178);
+    border-radius: 5px;
+}
+  
+::-webkit-scrollbar-thumb:hover {
+    background: #555; 
+}
+
+.left .content .card{
+    height: 70px;
+    margin: 1rem 0.5rem;
+    border-radius: 20px;
+    background-color: gray;
+    border: 3px solid #E84A5F;
+    transition: box-shadow 0.3s ease-in-out;
+}
+
+.left .content .card:hover{
+    box-shadow: 3px 3px 5px black;
+}
+
+.left .content .card button{
+    height: 100%;
+    width: 100%;
+    cursor: pointer;
+    background-color: transparent;
+    border: none;
+    color: #2A363B;
+}
+
+.left .playlist .content .card:last-child button{
+    color: #ffffff;
+    text-shadow: 1px 1px 2px black;
+}
+
+.left .favorite .content .card button, .left .recent .content .card button{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font-size: 0.7rem;
+    gap: 1rem;
+}
+
+.left .content .card button .img-wrapper img{
+    width:50px;
+    height: 50px;
+    border-radius: 100px;
+    padding: 0;
+}
+
+.left .content .card button .img-wrapper{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.rotate{
+    animation: rotate 3s infinite linear;
+}
+
+@keyframes rotate {
+    0%{
+        transform: rotate(0deg);
+    }
+    
+    100%{
+        transform: rotate(360deg);
+    }
+}
+
+.container .right .search-bar{
+    height: 30px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    border-radius: 10px;
+    padding: 0.3rem;
+    margin-bottom: 2rem;
+    background-color: rgba(255, 255, 255, 0.5);
+}
+
+.container .right .search-bar label img{
+    object-fit: contain;
+    width: 100%;
+    height: 100%;
+}
+
+.container .right .search-bar label{
+    width: 10%;
+    height: 90%;
+}
+
+.container .right .search-bar input{
+    width: 400px;
+    border: none;
+    background-color: transparent;
+    font-size: 0.9rem;
+}
+
+.container .right .search-bar input:focus{
+    outline: none;
+}
+
+.popular-song{
+    margin-top: 1rem;
+    height: 310px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    border: 3px solid rgba(255, 255, 255, 0.5);
+    padding-bottom: 1rem;
+}
+
+.popular-song .top-popular{
+    margin-bottom: 2rem;
+}
+
+.popular-song .top-popular h3{
+    margin: 0;
+    margin-top: 1rem;
+    margin-bottom: 0.3rem;
+    color: rgba(255, 255, 255, 0.4);
+    text-shadow: 0 0 2px rgb(253, 222, 222);
+    text-align: center;
+}
+
+.popular-song .bottom-popular{
+    display: flex;
+    flex-direction: row;
+}
+
+.popular-song .left-popular, .popular-song.right-popular{
+    width: 50%;
+}
+
+.popular-song .left-popular{
+    margin:0 1rem;
+}
+
+.popular-song.right-popular{
+    margin: 0 1rem;
+}
+
+.popular-song .left-popular img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.popular-song .right-popular .title{
+    text-align: center;
+    font-size: 1.4rem;
+    color: wheat;
+    text-shadow: 1px 1px 5px black;
+    margin-top: 3.5rem;
+}
+
+.popular-song .right-popular .title h4{
+    margin-bottom: 0;
+}
+
+.popular-song .right-popular .singer{
+    font-size: 0.8rem;
+    text-align: center;
+}
+
+.popular-song .right-popular .description{
+    margin-top: 2rem;
+}
+
+.popular-song .right-popular a{
+    margin-top: 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.popular-song .right-popular a button{
+    border: 3px solid rgb(241, 152, 152);
+    padding: 0.8rem;
+    background-color: transparent;
+    text-align: center;
+    font-size: 1.1rem;
+    cursor: pointer;
+    border-radius: 20px;
+    transition: border 0.3s linear, box-shadow 0.3s linear;
+}
+
+.popular-song .right-popular a button:hover{
+    border: 3px solid red;
+    box-shadow: 0px 0px 5px red;
+}
+
+@media(max-width:1500px){
+    .container .left{
+        width: 40%;
+    }
+
+    .container .left{
+        font-size: 0.8rem;
+    }
+}
+
+@media (max-width:1200px) {
+    .container{
+        flex-direction: column-reverse;
+        align-items: center;
+        justify-content: center;
+        height: auto;
+        gap: 3rem;
+    }
+
+    .container .left, .container .right{
+        width: 90%;
+    }
+
+    .container .right .popular-song{
+        height: auto;
+        overflow: visible;
+    }
+
+    .container .right .popular-song .bottom-popular{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .popular-song .right-popular .description{
+        margin-top: 0.5rem;
+        text-align: center;
+    }
+
+    .card button{
+        font-size: 0.6rem;
+    }
+}
+
+@media (max-width:600px) {
+    .container .left, .container .right{
+        width: 100%;
+    }
+}
+
+@media (max-width:500px) {
+    .container .right .search-bar{
+        height: 20px;
+        width: 60%;
+    }
+
+    .container .right .search-bar form input{
+        font-size: 0.7rem;
+    }
+}

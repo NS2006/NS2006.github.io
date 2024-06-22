@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Willify | Songs</title>
+
+    <link rel="stylesheet" href="../style/header.css">
+    <link rel="stylesheet" href="../style/footer.css">
+    <link rel="stylesheet" href="../style/songs.css">
+
+    <script src="../js/songData.js" defer></script>
+    <script src="../js/songs.js" defer></script>
+</head>
+<body>
+    <!-- Header -->
+    <header class="navbar">
+        <div class="left">
+            <div class="navbar-logo">
+                <a href="../html/home.html">
+                    <img src="../assets/img/Logo Willify.png" alt="Icon Willify">
+                </a>
+            </div>
+        </div>
+
+        <div class="middle">
+            <div class="navbar-icon">
+                <a href="../html/home.html">
+                    <div class="navbar-icon-img">
+                        <img src="../assets/img/Icon Home.png" alt="Icon Home">
+                    </div>
+                    <h1>Home</h1>
+                </a>
+            </div>
+
+            <div class="navbar-icon navbar-active">
+                <a href="../html/songs.html">
+                    <div class="navbar-icon-img">
+                        <img src="../assets/img/Icon Songs.png" alt="Icon Home">
+                    </div>
+                    <h1>Songs</h1>
+                </a>
+            </div>
+
+            <div class="navbar-icon">
+                <a href="../html/abouUs.html">
+                    <div class="navbar-icon-img">
+                        <img src="../assets/img/Icon About Us.png" alt="Icon Home">
+                    </div>
+                    <h1>About Us</h1>
+                </a>
+            </div>
+        </div>
+
+        <div class="right">
+            <button>
+                <a href="../html/login.html">Login</a>
+            </button>
+        </div>
+    </header>
+
+
+
+    <!-- Content -->
+    <audio src="../assets/audio/Song Hall Of Fame.mp3" id="music" loop></audio>
+    <div class="container">
+        <div class="search-bar">
+            <label for="searchBar">
+                <img src="../assets/img/Icon Search.png" alt="Icon Search">
+            </label>
+            <input type="text" name="searchBar" id="searchBar" placeholder="Type Here To Search">
+        </div>
+
+        <div class="popular-song">
+            <button class="top" type="button">
+                <div id="popluar-href">
+                    <img src="../assets/img/Song-Hall Of Fame.jpg" id="popular-img">
+                </div>
+            </button>
+
+            <div class="bottom">
+                <div class="about">
+                    <h1 class="title" id="title">Hall Of Fame</h1>
+                    <h4 class="artist" id="artist">The Script ft. Will.I.Am</h4>
+                </div>
+                <div class="player">
+                    <button class="img-wrapper" id="backward">
+                        <img src="../assets/img/Icon Backward.png" alt="Icon Backward">
+                    </button>
+                    <button class="img-wrapper" id="play">
+                        <img src="../assets/img/Icon Play.png" alt="Icon Play">
+                    </button>
+                    <button class="img-wrapper" id="forward">
+                        <img src="../assets/img/Icon Forward.png" alt="Icon Forward">
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <div class="list-song">
+            <h2 class="main-title">List Of Songs</h2>
+            <a class="card song3" href="../html/songDetail.html">
+                <div class="img-wrapper">
+                    <img src="../assets/img/Song-7 Years.jpg" alt="Song 7 Years">
+                </div>
+                <div class="description">
+                    <h2 class="title">7 Years</h2>
+                    <h4 class="artist">Lukas Graham</h4>
+                    <h5 class="release-year">2015</h5>
+                </div>
+            </a>
+
+            <a class="card song4" href="../html/songDetail.html">
+                <div class="img-wrapper">
+                    <img src="../assets/img/Song-Faded.jpg" alt="Song Faded">
+                </div>
+                <div class="description">
+                    <h2 class="title">Faded</h2>
+                    <h4 class="artist">Alan Walker</h4>
+                    <h5 class="release-year">2015</h5>
+                </div>
+            </a>
+
+            <a class="card song1" href="../html/songDetail.html">
+                <div class="img-wrapper">
+                    <img src="../assets/img/Song-Hall Of Fame.jpg" alt="Song Hall Of Fame">
+                </div>
+                <div class="description">
+                    <h2 class="title">Hall Of Fame</h2>
+                    <h4 class="artist">The Script ft. Will.I.Am</h4>
+                    <h5 class="release-year">2012</h5>
+                </div>
+            </a>
+
+            <a class="card song2" href="../html/songDetail.html">
+                <div class="img-wrapper">
+                    <img src="../assets/img/Song-The Nights.jpg" alt="Song The Nights">
+                </div>
+                <div class="description">
+                    <h2 class="title">The Nights</h2>
+                    <h4 class="artist">Avicii</h4>
+                    <h5 class="release-year">2014</h5>
+                </div>
+            </a>
+
+            <a class="card song5" href="../html/songDetail.html">
+                <div class="img-wrapper">
+                    <img src="../assets/img/Song-Waiting For Love.jpg" alt="Song Waiting For Love">
+                </div>
+                <div class="description">
+                    <h2 class="title">Waiting For Love</h2>
+                    <h4 class="artist">Avicii</h4>
+                    <h5 class="release-year">2015</h5>
+                </div>
+            </a>
+
+            <a class="card song6" href="../html/songDetail.html">
+                <div class="img-wrapper">
+                    <img src="../assets/img/Song-Fairy Tale.jpg" alt="Song Fairy Tale">
+                </div>
+                <div class="description">
+                    <h2 class="title">Fairy Tale</h2>
+                    <h4 class="artist">Michael Wong</h4>
+                    <h5 class="release-year">2005</h5>
+                </div>
+            </a>
+
+            <a class="card song7" href="../html/songDetail.html">
+                <div class="img-wrapper">
+                    <img src="../assets/img/Song-Laskar Pelangi.jpg" alt="Song Laskar Pelangi">
+                </div>
+                <div class="description">
+                    <h2 class="title">Laskar Pelangi</h2>
+                    <h4 class="artist">Nidji</h4>
+                    <h5 class="release-year">2008</h5>
+                </div>
+            </a>
+
+            <a class="card song8" href="../html/songDetail.html">
+                <div class="img-wrapper">
+                    <img src="../assets/img/Song-Betelgeuse.jpg" alt="Song Betelgeuse">
+                </div>
+                <div class="description">
+                    <h2 class="title">Betelgeuse</h2>
+                    <h4 class="artist">Yuuri</h4>
+                    <h5 class="release-year">2021</h5>
+                </div>
+            </a>
+        </div>
+    </div>
+
+
+    <!-- Footer -->
+    <footer class="footer-container">
+        <div class="left">
+            <div class="logo-wrapper">
+                <img src="../assets/img/Logo Willify.png" alt="Logo Willify">
+            </div>
+        </div>
+
+        <div class="right">
+            <div class="part-1">
+                <a href="../html/home.html">Home</a>
+                <a href="../html/songs.html">Songs</a>
+                <a href="../html/abouUs.html">About Us</a>
+            </div>
+
+            <div class="part-2">
+                <div class="top">
+                    <h3>Contact Us</h3>
+                </div>
+                <div class="bottom">
+                    <a href="#" class="footer-contact">
+                        <img src="../assets/img/Icon Line.png" alt="Icon Line">
+                    </a>
+    
+                    <a href="#" class="footer-contact">
+                        <img src="../assets/img/Icon Email.png" alt="Icon Email">
+                    </a>
+    
+                    <a href="#" class="footer-contact">
+                        <img src="../assets/img/Icon Instagram.png" alt="Icon Instagram">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
